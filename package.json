@@ -1,0 +1,19 @@
+{
+  "name": "exchange-rate",
+  "version": "1.0.0",
+  "description": "exchange rate challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ.git"
+  },
+  "author": "nwang57",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ/issues"
+  },
+  "homepage": "https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ#readme"
+}
