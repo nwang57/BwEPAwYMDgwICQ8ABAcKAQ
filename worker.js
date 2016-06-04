@@ -29,11 +29,11 @@ class RateWorker {
         this.beanstalk_tube = beanstalk_tube;
         this.db_url = db_url;
         this.mongo_collection = mongo_collection;
-        this.success_duration = success_duration || 6;
+        this.success_duration = success_duration || 60;
         this.number_results = number_results || 10;
         this.retry_duration = retry_duration || 3;
         this.failed_attempts = failed_attempts || 3;
-        this.reserve_timeout = timeout || 10;
+        this.reserve_timeout = timeout || 90;
         this.beanstalkd_connection = new Beanstalkd(beanstalk_host, beanstalk_port);
     }
 
