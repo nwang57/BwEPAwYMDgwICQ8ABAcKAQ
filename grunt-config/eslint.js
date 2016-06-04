@@ -5,7 +5,7 @@ module.exports = {
 		    configFile: '.eslintrc'
 	  },
 	  target: [
-		    '*.js',
+		    '**/*.js',
         '!**/node_modules/**'
 	  ]
 };

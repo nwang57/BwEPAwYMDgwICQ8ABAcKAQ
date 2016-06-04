@@ -1,7 +1,7 @@
 'use strict';
-let RateRequest = require('./rate_request');
+let RateRequest = require('./src/rate_request');
 let Beanstalkd = require('beanstalkd');
-let config = require('./config');
+let config = require('./src/config');
 const beanstalkd = new Beanstalkd(config.beanstalk_host, config.beanstalk_port);
 let request = new RateRequest('USD', 'HKD');
 

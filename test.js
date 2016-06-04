@@ -1,8 +1,8 @@
 'use strict';
 let expect = require('chai').expect;
-let RateDownloader = require('./ex_rate_client');
-let RateRequest = require('./rate_request');
-let RateWorker = require('./worker');
+let RateDownloader = require('./src/ex_rate_client');
+let RateRequest = require('./src/rate_request');
+let RateWorker = require('./src/worker');
 let Beanstalkd = require('beanstalkd');
 
 describe('ExchangeRateClient', function () {

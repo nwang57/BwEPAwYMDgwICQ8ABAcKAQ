@@ -141,7 +141,6 @@ class RateWorker {
                 that.saveJob(request, that.retry_duration);
             } else {
                 console.log('Job discarded');
-                that.stop();
             }
             reject(request);
         });
@@ -157,7 +156,6 @@ class RateWorker {
                 that.saveJob(request, that.success_duration);
             } else {
                 console.log('Job finished');
-                that.stop();
             }
             resolve(request);
         });

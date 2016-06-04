@@ -8,10 +8,10 @@
     "seaport_port": 9090,
 
     "job": {
-        "success_duration": 60,
+        "success_duration": 6,
         "number_results": 10,
         "retry_duration": 3,
         "failed_attempts": 3,
-        "timeout": 90
+        "timeout": 9
     }
 }
