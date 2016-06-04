@@ -1,9 +1,17 @@
 {
-    "beanstalk_host": "localhost",
+    "beanstalk_host": "challenge.aftership.net",
     "beanstalk_port": 11300,
     "beanstalk_tube": "nwang57",
     "mongodb_url": "mongodb://nwang57:aftership@ds019053.mlab.com:19053/playground",
     "mongodb_collection": "rates",
     "seaport_host": "localhost",
-    "seaport_port": 9090
+    "seaport_port": 9090,
+
+    "job": {
+        "success_duration": 60,
+        "number_results": 10,
+        "retry_duration": 3,
+        "failed_attempts": 3,
+        "timeout": 90
+    }
 }

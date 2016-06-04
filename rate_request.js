@@ -12,6 +12,7 @@
  * @property {number} last_fail_ts
  */
 class RateRequest {
+
     constructor(from, to, success_count, failed_count, job_id, success_ts, fail_ts) {
         this._from = from;
         this._to = to;
