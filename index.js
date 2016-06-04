@@ -1,22 +1,6 @@
-var ExchangeRateClient = require('./ex_rate_client');
+'use strict'
+var RateWorker = require('./worker');
+var config = require('./config');
 
-var client = new ExchangeRateClient('USD', 'HKD');
-
-var results = [];
-var errors = 0;
-var timer = setInterval(function() {
-    if (results.length > 5) {
-        console.log(results);
-        clearInterval(timer);
-    }
-    client.get_data(function(err, body) {
-        if (err) {
-            errors++;
-            setTimeout(console.log("error"), 200);
-        }
-        else {
-            results.push(body);
-        }
-    });
-});
-    
+var worker = new RateWorker(config.beanstalk_host, config.beanstalk_port, config.beanstalk_tube, config.mongodb_url, config.mongodb_collection);
+worker.start();

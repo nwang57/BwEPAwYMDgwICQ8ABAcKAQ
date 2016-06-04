@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ/issues"
   },
-  "homepage": "https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ#readme"
+  "homepage": "https://github.com/nwang57/BwEPAwYMDgwICQ8ABAcKAQ#readme",
+  "dependencies": {
+    "beanstalkd": "^1.0.4",
+    "http-proxy": "^1.13.3",
+    "seaport": "^2.0.9"
+  }
 }

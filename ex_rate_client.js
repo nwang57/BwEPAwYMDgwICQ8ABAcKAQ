@@ -16,8 +16,5 @@ var get_data = function (from, to) {
             return JSON.parse(response.body);
         })
         .then(parse_data.bind(null, from, to))
-        .catch(function(e) {
-            console.log("erorr");
-        });
 };
 exports.get_data = get_data;
