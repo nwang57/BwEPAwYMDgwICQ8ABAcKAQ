@@ -7,7 +7,7 @@ Modify the config file with the correct host, port for Beanstalkd and mongodb ur
 
 
 Then run the following command to start the worker:  
-`node index.js`
+`node src/index.js`
     
 ## Running in multiple machines
 
@@ -17,7 +17,15 @@ Start seaport service:
 `seaport listen 9090`
     
 Start load balancer, the load balancer will listen port 8000:  
-`node load_balancer.js`
+`node src/load_balancer.js`
 
 Start worker server:  
-`node worker_server.js &`
+`node src/worker_server.js &`
+
+## Lint
+
+`grunt lint`
+
+## Test
+
+`mocha test.js`
